@@ -1,0 +1,9 @@
+[hidden]{display:none!important}
+#chapter-veil{position:fixed;inset:0;background:radial-gradient(ellipse at 60% 45%,#d0dcda,#93aeb4);z-index:12;opacity:0;pointer-events:none;display:grid;place-items:center}
+#chapter-veil.active{pointer-events:auto}#chapter-veil p{color:#334d52;font-size:16px;letter-spacing:2px;text-align:center}
+#keeper-ui{position:absolute;inset:auto 0 25px;z-index:3;text-align:center;padding:0 16px;pointer-events:none;text-shadow:0 2px 7px #091a20}
+.chapter-label{font:10px sans-serif;letter-spacing:3px;opacity:.65}#keeper-line{font-size:18px;letter-spacing:.7px;margin:10px 0 13px}
+.keeper-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;pointer-events:auto}.keeper-actions button{font:12px sans-serif;letter-spacing:.4px;background:#10282cbb}.keeper-actions button:disabled{opacity:.4;cursor:default}
+#keeper-hint{display:block;margin-top:12px;font:11px sans-serif;letter-spacing:.5px;opacity:.75}
+.ritual-progress{display:flex;gap:12px;justify-content:center;margin:12px}.ritual-progress i{height:5px;width:5px;border:1px solid #c1cab7;transform:rotate(45deg);transition:background 1s}.ritual-progress i.done{background:#e4d7b5}
+@media(max-width:800px){#keeper-line{font-size:15px}#keeper-ui{bottom:16px}.keeper-actions{gap:8px}.chapter-label{font-size:9px}}

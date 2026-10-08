@@ -1,0 +1,17 @@
+/* Shared visual language for every chapter. */
+:root{--ui-font:Arial,Helvetica,sans-serif;--story-font:Georgia,'Songti SC',serif;--ui-text:#e0e4df;--ui-border:#bccdc566;--ui-panel:#10282cbb}
+body{font-family:var(--story-font);color:var(--ui-text)}
+footer button,.keeper-actions button,.mountain-actions button{font:12px var(--ui-font);letter-spacing:.5px;line-height:1.2;color:var(--ui-text);background:var(--ui-panel);border:1px solid var(--ui-border);border-radius:2px;padding:12px 20px;backdrop-filter:blur(10px);transition:background .2s,border-color .2s}
+footer button:hover,.keeper-actions button:hover,.mountain-actions button:hover{background:#486064bb;border-color:#c5d1c4}
+button:focus-visible{outline:2px solid #e2c79d;outline-offset:3px}.mountain-actions button.visited{border-color:#c4a878;color:#ead6b6}
+.chapter-label{font:10px var(--ui-font);letter-spacing:3px;opacity:.7}
+#caption,#keeper-line,#mountain-line{font:16px/1.5 var(--story-font);letter-spacing:.7px;text-shadow:0 2px 8px #102224}
+#keeper-line,#mountain-line{margin:10px 0 13px}
+#help,#keeper-hint,#mountain-hint{font:11px/1.5 var(--ui-font);letter-spacing:.5px;color:var(--ui-text);opacity:.75}
+#keeper-hint,#mountain-hint{display:block;margin-top:12px}
+footer,.keeper-actions,.mountain-actions{gap:12px}
+#mountain-ui{bottom:25px;width:min(1120px,96vw)}
+#perch-progress{font:10px var(--ui-font);letter-spacing:1px}
+@media(max-width:800px){footer button,.keeper-actions button,.mountain-actions button{padding:10px 12px}.keeper-actions,.mountain-actions{gap:8px}#keeper-line,#mountain-line{font-size:15px}}
+
+header{text-shadow:0 2px 8px #0b2029,0 0 22px #0b202988}
